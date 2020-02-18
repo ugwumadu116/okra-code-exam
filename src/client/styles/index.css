@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8f9f9;
+}
+
+code {
+  font-family: "55 Roman 16px/19px Helvetica Neue LT Std SemiBold 15px/20px Open Sans",
+    , monospace;
+}
+.center_all {
+  max-width: 1139px;
+  height: 56px;
+  margin: 0px auto;
+}
+
+.box {
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  left: 0%;
+  bottom: 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index: 999;
+  transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -webkit-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -moz-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -ms-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -o-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+}
+
+.box2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index: 999;
+  transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -webkit-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -moz-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -ms-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+  -o-transition: left, cubic-bezier(0.4, 0.01, 0.165, 0.99) 1s;
+}
+
+@media (min-width: 870px) {
+  .box {
+    display: none;
+  }
+}
